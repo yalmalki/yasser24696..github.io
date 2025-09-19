@@ -1,0 +1,232 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yasser Al‑Malki — Yasser Al‑Malki</title>
+  <meta name="description" content="CMU MS MechE focused on mechanical design, ML for engineering, simulation & optimization. Selected projects and resume.">
+  <style>
+    :root {
+      --bg: #0f172a;        /* slate-900 */
+      --card: #111827;      /* gray-900 */
+      --muted: #94a3b8;     /* slate-400 */
+      --text: #e5e7eb;      /* gray-200 */
+      --accent: #38bdf8;    /* sky-400 */
+      --accent-2: #22d3ee;  /* cyan-400 */
+      --ring: rgba(56,189,248,.35);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background:var(--bg); color:var(--text); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header.nav { position: sticky; top:0; backdrop-filter: blur(8px); background: rgba(15, 23, 42, .7); border-bottom: 1px solid rgba(148,163,184,.15); z-index: 50; }
+    header .inner { display:flex; align-items:center; gap: 16px; justify-content: space-between; padding: 12px 24px; }
+    .brand { display:flex; align-items:center; gap:10px; font-weight:700; }
+    .dot { width:10px; height:10px; border-radius:50%; background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: 0 0 18px var(--ring); }
+    nav a { margin-left: 16px; font-weight: 600; }
+    .hero { padding: 56px 24px 32px; display:grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items: center; }
+    .hero h1 { font-size: clamp(28px, 5vw, 42px); line-height:1.1; margin: 0 0 12px; }
+    .hero p.lead { color: var(--muted); margin: 0 0 18px; }
+    .badge { display:inline-block; padding:6px 10px; border:1px solid rgba(148,163,184,.25); border-radius: 999px; color: var(--muted); font-size: 13px; }
+    .card { background: linear-gradient(180deg, rgba(17,24,39,.75), rgba(17,24,39,.55)); border:1px solid rgba(148,163,184,.12); border-radius: 16px; padding: 18px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+    .grid { display:grid; gap: 16px; }
+    .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .section { padding: 32px 24px; }
+    .section h2 { font-size: 22px; letter-spacing:.3px; margin: 0 0 16px; }
+    .chips { display:flex; flex-wrap: wrap; gap: 8px; }
+    .chip { font-size:13px; color: var(--muted); border:1px solid rgba(148,163,184,.2); border-radius: 999px; padding:4px 8px; }
+    .proj { display:flex; flex-direction: column; gap: 8px; }
+    .proj h3 { margin: 0; font-size: 18px; }
+    .proj .meta { font-size: 13px; color: var(--muted); }
+    .proj .body { color: #d1d5db; }
+    .proj .list { margin:0 0 0 18px; }
+    .resume { display:flex; align-items:center; justify-content: space-between; gap:16px; }
+    .btn { display:inline-block; padding: 10px 14px; border-radius: 10px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color:#041016; font-weight:700; border:none; }
+    .btn:hover { filter: brightness(1.05); text-decoration: none; }
+    .footer { color: var(--muted); border-top: 1px solid rgba(148,163,184,.12); padding: 18px 24px 40px; font-size: 14px; }
+    .media { aspect-ratio: 16/9; width:100%; border-radius: 12px; background: #0b1220; border:1px dashed rgba(148,163,184,.18); display:grid; place-items:center; color:var(--muted); }
+    .sr { position:absolute; left:-9999px; }
+    .note { font-size:13px; color: var(--muted); }
+    @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } .grid.cols-3 { grid-template-columns: 1fr; } .grid.cols-2 { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="nav" aria-label="Site navigation">
+    <div class="inner container">
+      <div class="brand"><span class="dot" aria-hidden="true"></span><span>Yasser Al‑Malki</span></div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="hero container">
+      <div>
+        <span class="badge">MS MechE @ CMU — Seeking Engineering & Management roles</span>
+        <h1>Hi, I’m <span style="color:var(--accent)">Yasser Al‑Malki</span> — an engineer who designs data‑driven systems and builds reliable products.</h1>
+        <p class="lead">CMU MS MechE focused on <strong>mechanical systems</strong>, <strong>ML for engineering</strong>, <strong>simulation & optimization</strong>, and <strong>management/consulting</strong>. I like tough problems where physics and data meet, and I bridge technical design with management insight.</p>
+        <div class="chips" aria-label="Key highlights">
+        </div>
+      </div>
+      <div class="card">
+        <img src="hero.jpg" alt="Yasser Al-Malki — Engineering work" style="width:100%; border-radius:12px;">
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Mechanical & Simulation</h3>
+          <ul class="list">
+            <li>CAD (SolidWorks), FEA (ANSYS)</li>
+            <li>DFMA, Tolerance analysis</li>
+            <li>Thermo‑fluids modeling</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Data & ML</h3>
+          <ul class="list">
+            <li>Python, Pandas, scikit‑learn</li>
+            <li>Classification, Regression, SVM/RF, Model evaluation</li>
+            <li>Experiment design & evaluation (PFI/MDI)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Management & Consulting</h3>
+          <ul class="list">
+            <li>Project management (Agile / Waterfall)</li>
+            <li>Operations improvement (Lean / Six Sigma)</li>
+            <li>Strategy & consulting case analysis</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Leadership & Impact</h3>
+          <ul class="list">
+            <li>Cross‑functional collaboration</li>
+            <li>Technical writing & presentations</li>
+            <li>Mentoring & team facilitation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <p class="note"></p>
+      <div class="grid cols-2">
+        <!-- Project 1 -->
+        <article class="card proj">
+          <h3>Radial Stress in Plate with a Hole — ML vs. Analytical</h3>
+          <div class="meta"></div>
+          <p class="body"><strong>Intent/Intro:</strong> CMU coursework: Predict radial stress around a circular hole under uniaxial tension using linear regression to infer σ₀ and R from measured data.</p>
+          <p class="body"><strong>Method:</strong> Collected stress data at r, fit closed‑form model via least squares, validated on held‑out points.</p>
+          <p class="body"><strong>Results:</strong> Predicted field matched theory; generalized to new loads.</p>
+          <p class="body"><strong>Discussion/Contribution:</strong> Built dataset & regression, derived evaluation scripts, wrote analysis; implications for quick design checks.</p>
+          
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card proj">
+          <h3>Buckling of Heterogeneous Columns — SVM Classifier</h3>
+          <div class="meta"></div>
+          <p class="body"><strong>Intro:</strong> Predict buckling risk from geometry & material features.</p>
+          <p class="body"><strong>Method:</strong> Feature engineering, cross‑validated SVM, PFI/MDI for importance.</p>
+          <p class="body"><strong>Results:</strong> Identified critical features driving instability.</p>
+          <p class="body"><strong>Contribution:</strong> Model design, ablations, and interpretability plots.</p>
+          
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card proj">
+          <h3>Point Clouds from STL — Open3D Pipeline</h3>
+          <div class="meta"> </div>
+          <p class="body"><strong>Intro:</strong> Convert CAD meshes into usable point clouds and surface normals for analysis/ML.</p>
+          <p class="body"><strong>Method:</strong> Poisson & uniform sampling, robust normal estimation, and clean visualizations; benchmarks on cube and bracket geometries.</p>
+          <p class="body"><strong>Results:</strong> Consistent normals, fast sampling, and clear demos for peers.</p>
+          <p class="body"><strong>Contribution:</strong> Built pipeline and docs; trained classmates on usage and maintained example scripts.</p>
+          
+        </article>
+
+        <!-- Project 4 -->
+        <article class="card proj">
+          <h3>ANSYS Thermal‑Mechanical Coupling Study</h3>
+          <div class="meta"> </div>
+          <p class="body"><strong>Intro:</strong> Lightweight bracket subject to thermal cycling.</p>
+          <p class="body"><strong>Method:</strong> Parametric sweep + response surface optimization.</p>
+          <p class="body"><strong>Results:</strong> Cut weight while meeting fatigue life.</p>
+          <p class="body"><strong>Contribution:</strong> Set study, validated meshes, authored report.</p>
+          
+        </article>
+
+        <!-- Project 5 -->
+        <article class="card proj">
+          <h3>BEANSVAULT — IoT Coffee Bean Container</h3>
+          <div class="meta"> </div>
+          <p class="body"><strong>Intro:</strong> Smart freshness tracking + re‑order reminders.</p>
+          <p class="body"><strong>Method:</strong> Sensor fusion + simple app dashboard.</p>
+          <p class="body"><strong>Results:</strong> Working prototype; user tests.</p>
+          <p class="body"><strong>Contribution:</strong> Hardware, firmware, business model.</p>
+          
+        </article>
+
+        <!-- Project 6 -->
+        <article class="card proj">
+          <h3>Consulting Case Analytics Toolkit</h3>
+          <div class="meta"> </div>
+          <p class="body"><strong>Intro:</strong> Generate clean charts/tables and unit economics for case analysis.</p>
+          <p class="body"><strong>Method:</strong> Reusable plotting components, margin math helpers, and CSV-to-exhibit pipelines.</p>
+          <p class="body"><strong>Results:</strong> Cut time-to-exhibit by ~40% in practice sessions.</p>
+          <p class="body"><strong>Contribution:</strong> Built and documented toolkit; shared templates with peers and facilitated practice groups.</p>
+          
+        </article>
+      
+        <!-- Project 7 -->
+        <article class="card proj">
+          <h3>Management Consulting Case Studies</h3>
+          <div class="meta"> </div>
+          <p class="body"><strong>Intro:</strong> Practiced cases (market entry, cost reduction, M&A) to build structured problem-solving.</p>
+          <p class="body"><strong>Method:</strong> Applied MECE frameworks, hypothesis-driven analysis, and quick financial modeling.</p>
+          <p class="body"><strong>Results:</strong> Produced concise recommendations and clean, decision-ready exhibits.</p>
+          <p class="body"><strong>Contribution:</strong> Facilitated discussions, created reusable templates, and bridged technical analysis with managerial implications.</p>
+          
+        </article>
+</div>
+    </section>
+
+    <section id="resume" class="section container">
+      <h2>Resume</h2>
+      <div class="card resume">
+        <p></p>
+        <a class="btn" href="YASSER ALMALKI Resume.pdf" aria-label="Download resume">Download Resume</a>
+      </div>
+      <p class="note"></p>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:yalmalki@andrew.cmu.edu">yalmalki@andrew.cmu.edu</a> · LinkedIn: <a href="https://www.linkedin.com/in/yasalmalki/" rel="nofollow">https://www.linkedin.com/in/yasalmalki/</a> 
+        <p class="note"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div>© <span id="year"></span> Yasser Al‑Malki. Built with semantic HTML and accessible design.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
