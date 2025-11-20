@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Balloon Angioplasty Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section class="section container">
+    <h1>Balloon Angioplasty Simulation</h1>
+
+    <img src="angioplasty.jpg" alt="Angioplasty Simulation" class="project-img">
+
+    <h2>Introduction</h2>
+    <p>Cardiovascular diseases often involve arterial narrowing caused by plaque buildup, restricting blood flow and increasing the risk of heart attack or stroke. Balloon Angioplasty is a common medical intervention that restores arterial diameter by expanding a stent radially inside the narrowed segment. This project models the mechanical response of the artery, plaque, and stent during expansion using finite element analysis.</p>
+
+    <h2>Methods</h2>
+    <ul>
+        <li>Created artery–plaque–stent geometry.</li>
+        <li>Assigned hyperelastic material properties to arterial tissue and stiff properties to plaque.</li>
+        <li>Applied fixed boundary constraints to arterial ends.</li>
+        <li>Simulated radial stent expansion to replicate Balloon Angioplasty.</li>
+        <li>Used refined mesh at plaque–artery interface for accurate stress capture.</li>
+    </ul>
+
+    <h2>Results</h2>
+    <ul>
+        <li>Stent expansion successfully increased lumen diameter.</li>
+        <li>Stress concentrations appeared at the plaque–artery interface.</li>
+        <li>Non-uniform deformation observed due to plaque stiffness.</li>
+        <li>Restored cross-sectional area indicated successful angioplasty.</li>
+    </ul>
+
+    <h2>Discussion / Evaluation</h2>
+    <p>The simulation captured realistic deformation patterns and stress distributions that align with clinical expectations. Future work includes patient-specific geometries, pulsatile flow loading, and viscoelastic arterial models.</p>
+
+    <h2>My Contribution</h2>
+    <ul>
+        <li>Built full geometry and boundary conditions.</li>
+        <li>Defined material properties for artery and plaque.</li>
+        <li>Configured stent expansion loading.</li>
+        <li>Performed meshing and solver setup.</li>
+        <li>Generated results and wrote analysis.</li>
+    </ul>
+
+    <p><a href="index.html">← Back to Projects</a></p>
+
+</section>
+
+</body>
+</html>
