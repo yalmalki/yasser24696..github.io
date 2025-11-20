@@ -7,6 +7,13 @@
   <title>Yasser Al‑Malki — Yasser Al‑Malki</title>
   <meta name="description" content="CMU MS MechE focused on mechanical design, ML for engineering, simulation & optimization. Selected projects and resume.">
   <style>
+    .project-img {
+    width: 100%;
+    max-height: 280px;  /* 250–350px also works */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
     :root {
       --bg: #0f172a;        /* slate-900 */
       --card: #111827;      /* gray-900 */
@@ -126,80 +133,72 @@
       <div class="grid cols-2">
         <!-- Project 1 -->
         <article class="card proj">
-          <h3>Radial Stress in Plate with a Hole — ML vs. Analytical</h3>
-          <div class="meta"></div>
-          <p class="body"><strong>Intent/Intro:</strong> CMU coursework: Predict radial stress around a circular hole under uniaxial tension using linear regression to infer σ₀ and R from measured data.</p>
-          <p class="body"><strong>Method:</strong> Collected stress data at r, fit closed‑form model via least squares, validated on held‑out points.</p>
-          <p class="body"><strong>Results:</strong> Predicted field matched theory; generalized to new loads.</p>
-          <p class="body"><strong>Discussion/Contribution:</strong> Built dataset & regression, derived evaluation scripts, wrote analysis; implications for quick design checks.</p>
-          
+          <h3>BEANSVAULT – Smart Coffee Bean Preservation System</h3><a href="project1-beansvault.html">BEANSVAULT – Smart Coffee Bean Preservation System</a></h3>
+              <!-- Placeholder Image -->
+    <img src="Picture1.png"
+         alt="BEANSVAULT Mockup"
+         class="project-img">
+
+              <div class="meta"></div>
+
+    <p class="body"><strong>Intent:</strong> A smart airtight container designed to preserve coffee bean freshness using environmental monitoring and a subscription-based digital service. The system reduces waste and improves everyday user experience for coffee drinkers.</p>
+
+    <p class="body"><strong>Skills / Tags:</strong> Product Design · IoT Concept · User Research · System Architecture · UI/UX · Business Model Design.</p>
+
+    <p class="body"><strong>Results:</strong> Defined airtight container mechanism, sensor layout, freshness-tracking workflow, and user dashboard concept. Created a complete system model combining hardware design and subscription features.</p>
+
+    <p class="body"><strong>Discussion/Contribution:</strong> Led concept development, performed research on freshness degradation, designed sensing architecture, structured the subscription model, and produced mockups and system diagrams.</p>
+
         </article>
 
         <!-- Project 2 -->
         <article class="card proj">
-          <h3>Buckling of Heterogeneous Columns — SVM Classifier</h3>
+          <h3>Balloon Angioplasty Simulation – Stent Expansion in a Partially Blocked Artery</h3><h3><a href="project2-angioplasty.html">Balloon Angioplasty Simulation – Stent Expansion in a Partially Blocked Artery</a></h3>
+
+                        <!-- Placeholder Image -->
+    <img src="Picture2.png"
+         alt="Stent Mockup"
+         class="project-img">
           <div class="meta"></div>
-          <p class="body"><strong>Intro:</strong> Predict buckling risk from geometry & material features.</p>
-          <p class="body"><strong>Method:</strong> Feature engineering, cross‑validated SVM, PFI/MDI for importance.</p>
-          <p class="body"><strong>Results:</strong> Identified critical features driving instability.</p>
-          <p class="body"><strong>Contribution:</strong> Model design, ablations, and interpretability plots.</p>
+          <p class="body"><strong>Intent:</strong> A finite-element simulation of a stent expanding inside an artery narrowed by plaque, modeling the Balloon Angioplasty procedure and analyzing radial deformation, stress distribution, and lumen restoration.</p>
+          <p class="body"><strong>Skills:</strong> ANSYS · Finite Element Analysis · Solid Mechanics · Biomedical Simulation · Stress Analysis · Deformation Modeling.</p>
+          <p class="body"><strong>Results:</strong> Simulated radial stent expansion, quantified arterial deformation, identified stress concentrations at plaque–artery interface, and evaluated effectiveness of lumen opening.</p>
+          <p class="body"><strong>Contribution:</strong> Assisted inspections, recorded findings, analyzed performance data, documented overhaul results, and recommended updated maintenance intervals.</p>
           
         </article>
 
         <!-- Project 3 -->
         <article class="card proj">
-          <h3>Point Clouds from STL — Open3D Pipeline</h3>
+          <h3>Gas Turbine Overhaul – Reliability and Performance Improvement</h3><h3><a href="project3-gasturbine.html">Gas Turbine Overhaul – Reliability and Performance Improvement</a></h3>
+
+                        <!-- Placeholder Image -->
+    <img src="Picture3.jfif"
+         alt="Gas Turbine Overhaul Mockup"
+         class="project-img">
           <div class="meta"> </div>
-          <p class="body"><strong>Intro:</strong> Convert CAD meshes into usable point clouds and surface normals for analysis/ML.</p>
-          <p class="body"><strong>Method:</strong> Poisson & uniform sampling, robust normal estimation, and clean visualizations; benchmarks on cube and bracket geometries.</p>
-          <p class="body"><strong>Results:</strong> Consistent normals, fast sampling, and clear demos for peers.</p>
+          <p class="body"><strong>Intro:</strong> Major overhaul project focused on restoring performance and preventing failures in a utility-scale gas turbine serving a local power plant.</p>
+          <p class="body"><strong>Method:</strong> Teardown inspection ▪ Damage classification ▪ Trend analysis ▪ Component refurbishment planning ▪ Assembly alignment checks.</p>
+          <p class="body"><strong>Results:</strong> Post-overhaul performance showed lower EGT and improved efficiency; cracked hot-gas-path components replaced or repaired; reduced failure risk.</p>
           <p class="body"><strong>Contribution:</strong> Built pipeline and docs; trained classmates on usage and maintained example scripts.</p>
           
         </article>
 
         <!-- Project 4 -->
         <article class="card proj">
-          <h3>ANSYS Thermal‑Mechanical Coupling Study</h3>
+          <h3>Neural Network Altitude Prediction for Pittsburgh</h3><h3><a href="project4-altitude.html">Neural Network Altitude Prediction for Pittsburgh</a></h3>
+
+                        <!-- Placeholder Image -->
+    <img src="Picture4.png"
+         alt="Neural Network Mockup"
+         class="project-img">
           <div class="meta"> </div>
-          <p class="body"><strong>Intro:</strong> Lightweight bracket subject to thermal cycling.</p>
-          <p class="body"><strong>Method:</strong> Parametric sweep + response surface optimization.</p>
-          <p class="body"><strong>Results:</strong> Cut weight while meeting fatigue life.</p>
-          <p class="body"><strong>Contribution:</strong> Set study, validated meshes, authored report.</p>
+          <p class="body"><strong>Intro:</strong> Built a neural network to predict altitude across Pittsburgh using coordinate-based features, then used the model to identify the region’s highest predicted peak.</p>
+          <p class="body"><strong>Method:</strong> Python · Machine Learning · Neural Networks · Regression · Data Cleaning · Model Evaluation.</p>
+          <p class="body"><strong>Results:</strong> Trained a feed-forward network with less than 1 m RMSE on validation data; model correctly isolated the max-altitude zone and improved prediction accuracy vs. baseline linear regression.</p>
+          <p class="body"><strong>Contribution:</strong> eveloped the dataset, engineered features, tuned the neural network (layers, activation functions, learning rate), and performed error analysis and model validation.</p>
           
         </article>
 
-        <!-- Project 5 -->
-        <article class="card proj">
-          <h3>BEANSVAULT — IoT Coffee Bean Container</h3>
-          <div class="meta"> </div>
-          <p class="body"><strong>Intro:</strong> Smart freshness tracking + re‑order reminders.</p>
-          <p class="body"><strong>Method:</strong> Sensor fusion + simple app dashboard.</p>
-          <p class="body"><strong>Results:</strong> Working prototype; user tests.</p>
-          <p class="body"><strong>Contribution:</strong> Hardware, firmware, business model.</p>
-          
-        </article>
-
-        <!-- Project 6 -->
-        <article class="card proj">
-          <h3>Consulting Case Analytics Toolkit</h3>
-          <div class="meta"> </div>
-          <p class="body"><strong>Intro:</strong> Generate clean charts/tables and unit economics for case analysis.</p>
-          <p class="body"><strong>Method:</strong> Reusable plotting components, margin math helpers, and CSV-to-exhibit pipelines.</p>
-          <p class="body"><strong>Results:</strong> Cut time-to-exhibit by ~40% in practice sessions.</p>
-          <p class="body"><strong>Contribution:</strong> Built and documented toolkit; shared templates with peers and facilitated practice groups.</p>
-          
-        </article>
-      
-        <!-- Project 7 -->
-        <article class="card proj">
-          <h3>Management Consulting Case Studies</h3>
-          <div class="meta"> </div>
-          <p class="body"><strong>Intro:</strong> Practiced cases (market entry, cost reduction, M&A) to build structured problem-solving.</p>
-          <p class="body"><strong>Method:</strong> Applied MECE frameworks, hypothesis-driven analysis, and quick financial modeling.</p>
-          <p class="body"><strong>Results:</strong> Produced concise recommendations and clean, decision-ready exhibits.</p>
-          <p class="body"><strong>Contribution:</strong> Facilitated discussions, created reusable templates, and bridged technical analysis with managerial implications.</p>
-          
-        </article>
 </div>
     </section>
 
