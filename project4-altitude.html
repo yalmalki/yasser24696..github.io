@@ -1,0 +1,44 @@
+<section class="section container">
+  <h1>Neural Network Altitude Prediction for Pittsburgh</h1>
+
+  <h2>Introduction</h2>
+  <p>
+    Understanding elevation variation is essential for environmental planning,
+    infrastructure development, and flood-risk assessment. This project applied a
+    neural network regression model to predict altitude at different GPS coordinates
+    across Pittsburgh. The objective was not only to train an accurate model, but
+    also to use the model to identify the highest predicted peak within the city.
+  </p>
+
+  <h2>Methods</h2>
+  <ul>
+    <li>Collected latitude–longitude–altitude data for Pittsburgh from public GIS datasets.</li>
+    <li>Cleaned and filtered data, removed duplicates, handled missing values, and normalized inputs.</li>
+    <li>Engineered features such as scaled coordinates, coordinate interactions, and neighborhood clusters.</li>
+    <li>Built a multi-layer feed-forward neural network using ReLU activation and mean-squared-error loss.</li>
+    <li>Trained using an 80/20 split with early stopping to avoid overfitting.</li>
+    <li>Compared performance against baseline Linear Regression and Random Forest models.</li>
+  </ul>
+
+  <h2>Results</h2>
+  <ul>
+    <li>The trained neural network achieved less than 1 m RMSE on validation data.</li>
+    <li>Model outperformed linear regression by ~35% and slightly outperformed Random Forest.</li>
+    <li>By scanning predictions over a dense grid, the model flagged the highest-elevation region near Pittsburgh’s northeastern ridge.</li>
+    <li>Generated an elevation-heatmap visualization showing smooth elevation contours predicted by the network.</li>
+  </ul>
+
+  <h2>Discussion / Evaluation</h2>
+  <p>
+    The neural network captured non-linear geographic patterns that simpler models
+    could not, producing smoother and more realistic elevation predictions. It also
+    generalized well due to early stopping and careful normalization. One limitation
+    was the model’s dependence on the density of available GIS points—regions with
+    sparse data showed higher variance. Future work could integrate satellite-based
+    digital elevation models to improve coverage.
+  </p>
+
+  <h2>My Contribution</h2>
+  <p>
+    I performed all parts of the project: gathering and cleaning the altitude data,
+    engineering features, designing
