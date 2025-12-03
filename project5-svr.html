@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Support Vector Regression Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="section container">
+<h2>Support Vector Regression for Engineering Data</h2>
+
+<h3>Introduction</h3>
+<p>
+This project explores how Support Vector Regression (SVR) can be used to model nonlinear relationships in engineering data.
+The goal was to build a regression model that predicts a continuous target variable from multiple input features more accurately
+than baseline linear models. Accurate prediction enables faster design iteration and reduces the need for repeated physical testing.
+</p>
+
+<h3>Methods</h3>
+<p>
+I cleaned and standardized the dataset, normalized numerical features, and implemented multiple SVR models using scikit-learn.
+I tested linear, polynomial, and RBF kernels. Hyperparameters (C, gamma, epsilon) were tuned via grid search with cross-validation.
+Baseline models included linear regression and ridge regression.
+</p>
+
+<h3>Results / Evaluation</h3>
+<p>
+The best model was the RBF-SVR, achieving significantly lower MSE and higher R² than linear baselines. Residual analysis showed
+that the SVR captured nonlinear relationships that simple regression could not, especially at the extremes of the data range.
+</p>
+
+<h3>My Contribution</h3>
+<p>
+I implemented the entire pipeline: preprocessing, model training, hyperparameter tuning, evaluation, and visualization. I analyzed
+learning curves, residuals, and performance trade-offs to compare non-linear vs linear methods for engineering data.
+</p>
+
+</section>
+
+</body>
+</html>
