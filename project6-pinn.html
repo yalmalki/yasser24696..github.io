@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Physics-Informed Neural Network</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="section container">
+<h2>Physics-Informed Neural Network for Solving Differential Equations</h2>
+
+<h3>Introduction</h3>
+<p>
+This project demonstrates how Physics-Informed Neural Networks (PINNs) can solve differential equations by embedding
+governing physics directly into the loss function. Instead of learning purely from data, the network is constrained
+by the PDE and boundary conditions, making it ideal when physical laws are known but data is limited.
+</p>
+
+<h3>Methods</h3>
+<p>
+I implemented a fully-connected neural network and used automatic differentiation to compute the required spatial derivatives.
+The loss function consisted of (1) the PDE residual at interior collocation points and (2) penalties for boundary conditions.
+The model was trained until both residuals were minimized.
+</p>
+
+<h3>Results / Evaluation</h3>
+<p>
+The PINN produced a smooth solution that closely matched the analytical reference. Because the physics was encoded directly
+into the loss function, the model remained stable and accurate even in regions with no training data.
+</p>
+
+<h3>My Contribution</h3>
+<p>
+I designed and implemented the neural network, selected collocation points, defined the PDE residual loss, and validated the
+solution against a classical numerical method. I experimented with network depth and collocation density to examine accuracy.
+</p>
+
+</section>
+
+</body>
+</html>
